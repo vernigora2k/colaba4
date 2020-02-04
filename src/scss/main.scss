@@ -3,4 +3,15 @@ $text-color: blue;
 
 body {
     background: $text-color;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 75px;
+    color: white;
+}
+
+.div-h2 {
+    font-family: 'open sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
 }
