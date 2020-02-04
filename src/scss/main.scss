@@ -1,17 +1,47 @@
-// scss
-$text-color: blue;
+@import "./settings";
 
-body {
-    background: $text-color;
-    font-family: 'Oswald';
-    font-style: normal;
-    font-size: 75px;
-    color: white;
-}
 
-.div-h2 {
-    font-family: 'open sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 44px;
-}
+section.intro {
+    background: url(/img/section_intro/intro_bg.png);
+    background-repeat: no-repeat;
+    height: 800px;
+    max-width: 1920px;
+    header.header.disp-flex {
+        justify-content: space-between;
+      div.header__logo {
+
+      }
+  
+      nav.header__nav {
+        ul.nav-list {
+          li.nav-list__item {
+            a {
+  
+            }
+          }
+        }
+      }
+  
+      div.header__none {
+  
+      }
+    }
+  
+    div.main-intro {
+      div.main-intro__title {
+  
+      }
+  
+      div.main-intro__under-title {
+  
+      }
+  
+      button.main-intro__button.button-transparent {
+  
+      }
+  
+      div.blue-transparent-block {
+  
+      }
+    }
+  }
