@@ -1,6 +1,6 @@
 @import "./settings";
 
-
+//section intro-------------------------------
 section.intro {
     background: url(/img/section_intro/intro_bg.png);
     background-repeat: no-repeat;
@@ -8,40 +8,83 @@ section.intro {
     max-width: 1920px;
     header.header.disp-flex {
         justify-content: space-between;
+        height: 80px;
+        background: rgba(0, 91, 193, 0.6);
+        align-items: center;
       div.header__logo {
-
+        margin-left: 40px;
       }
-  
       nav.header__nav {
         ul.nav-list {
           li.nav-list__item {
+              margin-right: 28px;
             a {
-  
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                text-decoration: none;
+                color: #ffffff;
+                &:hover,
+                &:focus,
+                &:active {
+                    opacity: 0.75;
+                }
             }
           }
         }
       }
-  
-      div.header__none {
-  
-      }
     }
-  
     div.main-intro {
-      div.main-intro__title {
-  
-      }
-  
-      div.main-intro__under-title {
-  
-      }
-  
-      button.main-intro__button.button-transparent {
-  
-      }
-  
       div.blue-transparent-block {
-  
+          position: absolute;
+          top: 80px;
+          left: 405px;
+          width: 444px;
+          height: 720px;
+          background: rgba(0, 91, 193, 0.6);
+          }
+      div.main-intro__title {
+          position: absolute;
+          max-width: 635px;
+          max-height: 142px;
+          margin-left: 595px;
+          margin-top: 202px;
+        h1 {
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 71px;
+            letter-spacing: 0.01em;
+            color: #ffffff;
+        }
+      } 
+      div.main-intro__under-title {
+          position: absolute;
+          max-width: 445px;
+          height: 44px;
+          margin-left: 595px;
+          margin-top: 384px;
+      }
+      button.main-intro__button.button-transparent {
+        position: absolute;
+        background: transparent;
+        border: 2px solid #ffffff;
+        padding: 15px 40px;
+        margin-left: 595px;
+        margin-top: 468px;
+        a.button-signature {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
       }
     }
   }
