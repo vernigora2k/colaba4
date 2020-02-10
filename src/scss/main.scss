@@ -9,7 +9,7 @@ section.intro {
     header.header.disp-flex {
         justify-content: space-between;
         height: 80px;
-        background: rgba(0, 91, 193, 0.6);
+        background: $MainScreenBlue;
         align-items: center;
       div.header__logo {
         margin-left: 40px;
@@ -23,7 +23,7 @@ section.intro {
                 font-size: 14px;
                 line-height: 19px;
                 text-decoration: none;
-                color: #ffffff;
+                color: $white;
                 &:hover,
                 &:focus,
                 &:active {
@@ -41,7 +41,7 @@ section.intro {
           left: 405px;
           width: 444px;
           height: 720px;
-          background: rgba(0, 91, 193, 0.6);
+          background: $MainScreenBlue;
           }
       div.main-intro__title {
           position: absolute;
@@ -56,7 +56,7 @@ section.intro {
             font-size: 48px;
             line-height: 71px;
             letter-spacing: 0.01em;
-            color: #ffffff;
+            color: $white;
         }
       } 
       div.main-intro__under-title {
@@ -69,7 +69,7 @@ section.intro {
       button.main-intro__button.button-transparent {
         position: absolute;
         background: transparent;
-        border: 2px solid #ffffff;
+        border: 2px solid $white;
         padding: 15px 40px;
         margin-left: 595px;
         margin-top: 468px;
@@ -79,7 +79,7 @@ section.intro {
             font-size: 16px;
             line-height: 22px;
             letter-spacing: 0.05em;
-            color: #ffffff;
+            color: $white;
             text-transform: uppercase;
         }
         &:hover {
@@ -114,7 +114,7 @@ section.news {
             line-height: 44px;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-            color: #343434;
+            color: $RegularFontColor;
         }
       }
       button.news__all-news {
@@ -129,7 +129,7 @@ section.news {
             line-height: 22px;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-            color: #ffffff;
+            color: $white;
         }
         &:hover {
             opacity: 0.7;
@@ -150,32 +150,15 @@ section.news {
             justify-content: space-between;
             margin-top: 77px;
           p {
-            color: #343434;
-            font-family: 'Oswald';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 27px;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
+            @include FontRegularH2 ();
           }
           p.date-news {
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 19px;
-            align-self: center;
+            @include FontDateArticle ();
           }
         }
         div.article2__main {
             p {
-                font-family: Open Sans;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 19px;
-                color: #343434;
+                @include FontRegularSmall;
                 margin-top: 42px;
             }
         }
@@ -187,7 +170,7 @@ section.news {
                 font-size: 14px;
                 line-height: 19px;
                 text-decoration-line: underline; 
-                color: #343434;
+                color: $RegularFontColor;
                 margin-top: 21px;
                 a {text-decoration: none;}
                 &:hover {
@@ -203,39 +186,20 @@ section.news {
         div.article3__header {
             margin-top: 77px;
             p {
-                font-family: Oswald;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                line-height: 27px;
-                letter-spacing: 0.05em;
-                text-transform: uppercase;
-                color: #343434;
+                @include FontRegularH2 ();
             }
         }
         div.article3__main {
             margin-top: 20px;
             p {
-                font-family: Open Sans;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 19px;
-                color: #343434;
+                @include FontRegularSmall; 
             }
         }
         div.article3__footer {
             margin-top: 20px;
             justify-content: space-between;
           p.date-news {
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 19px;
-            align-self: center;
-            color: #343434;
-            align-self: flex-end;
+            @include FontDateArticle ();
           }
         }
       }
@@ -246,39 +210,20 @@ section.news {
       div.article4__header {
           margin-top: 77px;
           p {
-              font-family: Oswald;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 18px;
-              line-height: 27px;
-              letter-spacing: 0.05em;
-              text-transform: uppercase;
-              color: #343434;
+              @include FontRegularH2 ();
           }
       }
       div.article4__main {
           margin-top: 20px;
           p {
-              font-family: Open Sans;
-              font-style: normal;
-              font-weight: 300;
-              font-size: 14px;
-              line-height: 19px;
-              color: #343434;
+             @include FontRegularSmall; 
           }
       }
       div.article4__footer {
           margin-top: 20px;
           justify-content: space-between;
         p.date-news {
-          font-family: Open Sans;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 19px;
-          align-self: center;
-          color: #343434;
-          align-self: flex-end;
+          @include FontDateArticle ();
         }
       }
     }
