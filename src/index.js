@@ -1,3 +1,3 @@
-import './js/common'
+import './js/formView'
+import './css/main.css'
 import './scss/reset.scss'
-import './scss/main.scss'
