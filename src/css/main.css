@@ -5,7 +5,7 @@
 
 body {
     width: 100%;
-    height: 800px;
+    height: 100vh;
     background-color: lightblue;
 }
 
@@ -18,7 +18,7 @@ body {
 .form {
     flex-direction: column;
     align-items: left;
-    width: 1000px;
+    width: 650px;
     background-color: white;
     margin-top: 2vh;
     padding: 2vh
@@ -30,10 +30,15 @@ body {
 
     .form__add {
         margin-top: 10px;
+        justify-content: space-between;
     }
 
         .inputvalue {
-            width: 65%
+            width: 450px;
+        }
+
+        .submitvalue {
+            margin-top: 15px;
         }
 
     .form__main {
